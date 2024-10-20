@@ -1,12 +1,18 @@
 #pragma once
+#include <iostream>
+#include <map>
 #include <string>
+
+#include "abstracts\LeetCodeProblem.h"
+
 using namespace std;
 
-class problem_1106
+class Problem1106 : public LeetCodeProblem
 {
 public:
 
-	bool parseBoolExpr(string expression) {
+	bool parseBoolExpr(string expression)
+	{
 		char command = expression.at(0);
 		if (command == 't')
 			return true;
@@ -41,6 +47,23 @@ public:
 		}
 
 		return false;
+	}
+
+	void test() override {
+		map<string, bool> testcases = {
+			{"!(&(f,t))", true},
+			{"|(f,&(t,|(t,f)),f,t)", true},
+			{"|(f,f,f,t)", true},
+			{"&(|(f))", false}
+		};
+
+		for (const auto& tc : testcases) {
+			bool result = Problem1106().parseBoolExpr(tc.first);
+			cout << "parseBoolExpr(\"" + tc.first << "\") = ";
+			cout << result << " must " << tc.second << endl;
+			if (result != tc.second)
+				throw "[TestCase error]: " + to_string(result) + " != " + to_string(tc.second);
+		}
 	};
 
 };

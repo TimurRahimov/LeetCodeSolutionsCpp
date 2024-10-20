@@ -23,7 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="problem_1106.h">
+    <ClInclude Include="problems\Problem1106.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="problems\abstracts\LeetCodeProblem.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

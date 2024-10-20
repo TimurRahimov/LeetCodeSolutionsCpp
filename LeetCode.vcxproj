@@ -130,7 +130,8 @@
     <ClCompile Include="LeetCode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="problem_1106.h" />
+    <ClInclude Include="problems\abstracts\LeetCodeProblem.h" />
+    <ClInclude Include="problems\Problem1106.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
