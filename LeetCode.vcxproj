@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp" />
+    <ClCompile Include="problems\Problem1593.cpp" />
     <ClCompile Include="problems\Problem1106.cpp" />
     <ClCompile Include="problems\Problem2530.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="problems\Problem1593.h" />
     <ClInclude Include="problems\abstracts\LeetCodeProblem.h" />
     <ClInclude Include="problems\Problem1106.h" />
     <ClInclude Include="problems\Problem2530.h" />

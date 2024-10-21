@@ -1,7 +1,4 @@
 #include "Problem2530.h"
-#include <queue>
-#include <list>
-#include <tuple>
 
 using namespace std;
 

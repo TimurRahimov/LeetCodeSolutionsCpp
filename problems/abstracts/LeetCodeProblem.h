@@ -2,6 +2,9 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <queue>
+#include <list>
+#include <tuple>
 
 using namespace std;
 
